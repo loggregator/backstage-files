@@ -3,22 +3,26 @@ kind: Location
 metadata:
   name: dap-tas-journey-observability-projects
 spec:
+  owner: dap-tas-journey-observability
   type: url
   targets:
-    - ./azure-nozzle.yml
-    - ./bosh-system-metrics-forwarder.yml
-    - ./bosh-system-metrics-server-release.yml
-    - ./cf-autoscaling-release.yml
-    - ./event-log-release.yml
-    - ./log-cache-cli.yml
-    - ./log-cache-release.yml
-    - ./loggregator-agent-release.yml
-    - ./loggregator-release.yml
-    - ./metric-registrar-cli.yml
+    - ./teams/dap-tas-journey-observability.yml
+    - ./systems/logging-and-metrics.yml
+    - ./systems/autoscaling.yml
+    - ./components/azure-nozzle.yml
+    - ./components/bosh-system-metrics-forwarder.yml
+    - ./components/bosh-system-metrics-server-release.yml
+    - ./components/cf-autoscaling-release.yml
+    - ./components/event-log-release.yml
+    - ./components/log-cache-cli.yml
+    - ./components/log-cache-release.yml
+    - ./components/loggregator-agent-release.yml
+    - ./components/loggregator-release.yml
+    - ./components/metric-registrar-cli.yml
     - https://github.com/pivotal-cf/metric-registrar-release/edit/backstage/catalog/catalog-info.yaml
-    - ./metrics-discovery-release.yml
-    - ./service-metrics-release.yml
-    - ./statsd-injector-release.yml
-    - ./syslog-release.yml
-    - ./system-metrics-release.yml
-    - ./system-metrics-scraper-release.yml
+    - ./components/metrics-discovery-release.yml
+    - ./components/service-metrics-release.yml
+    - ./components/statsd-injector-release.yml
+    - ./components/syslog-release.yml
+    - ./components/system-metrics-release.yml
+    - ./components/system-metrics-scraper-release.yml

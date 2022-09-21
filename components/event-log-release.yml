@@ -10,6 +10,6 @@ metadata:
     - go
 spec:
   type: service
-  lifecycle: production
+  lifecycle: deprecated
   owner: dap-tas-journey-observability
   system: logging-and-metrics
