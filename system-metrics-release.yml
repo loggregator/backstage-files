@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: system-metrics-release
+  description: Components required to collect system metrics from BOSH-deployed vms
+  annotations:
+    github.com/project-slug: cloudfoundry/system-metrics-release
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+  links:
+    - url: https://ci.funtime.lol/teams/loggregator/pipelines/system-metrics-release
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics

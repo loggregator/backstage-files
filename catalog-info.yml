@@ -8,3 +8,17 @@ spec:
     - ./azure-nozzle.yml
     - ./bosh-system-metrics-forwarder.yml
     - ./bosh-system-metrics-server-release.yml
+    - ./cf-autoscaling-release.yml
+    - ./event-log-release.yml
+    - ./log-cache-cli.yml
+    - ./log-cache-release.yml
+    - ./loggregator-agent-release.yml
+    - ./loggregator-release.yml
+    - ./metric-registrar-cli.yml
+    - https://github.com/pivotal-cf/metric-registrar-release/edit/backstage/catalog/catalog-info.yaml
+    - ./metrics-discovery-release.yml
+    - ./service-metrics-release.yml
+    - ./statsd-injector-release.yml
+    - ./syslog-release.yml
+    - ./system-metrics-release.yml
+    - ./system-metrics-scraper-release.yml

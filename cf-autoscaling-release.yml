@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cf-autoscaling-release
+  description: BOSH release for CF autoscaling service
+  annotations:
+    github.com/project-slug: pivotal-cf/cf-autoscaling-release
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+  links:
+    - url: https://ci.funtime.lol/teams/autoscaling/pipelines/autoscaler
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics

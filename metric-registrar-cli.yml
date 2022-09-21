@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: metric-registrar-cli
+  description: Plugin for the CF CLI that allows users to register metric sources for collection
+  annotations:
+    github.com/project-slug: pivotal-cf/metric-registrar-cli
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+  links:
+    - url: https://ci.funtime.lol/teams/loggregator/pipelines/metric-registrar-cli
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics

@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: loggregator-release
+  description: Loggregator provides a highly-available (HA) and secure stream of logs and metrics for all applications and components on Cloud Foundry
+  annotations:
+    github.com/project-slug: cloudfoundry/loggregator-release
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+  links:
+    - url: https://ci.funtime.lol/teams/loggregator/pipelines/loggregator-release
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics

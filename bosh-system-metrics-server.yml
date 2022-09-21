@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bosh-system-metrics-server-release
+  description: Provides bosh health events (heartbeats and alerts) over a secure grpc stream
+  annotations:
+    github.com/project-slug: cloudfoundry/bosh-system-metrics-server-release
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+  links:
+    - url: https://ci.funtime.lol/teams/loggregator/pipelines/bosh-system-metrics-server
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics

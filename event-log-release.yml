@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: event-log-release
+  description: DEPRECATED - BOSH job for streaming Windows Event Logs to a syslog endpoint over TCP or UDP
+  annotations:
+    github.com/project-slug: cloudfoundry/event-log-release
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics

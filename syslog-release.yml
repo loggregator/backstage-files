@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: syslog-release
+  description: BOSH release to forward local syslog events in RFC5424 format to a remote syslog endpoint
+  annotations:
+    github.com/project-slug: cloudfoundry/syslog-release
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+  links:
+    - url: https://ci.funtime.lol/teams/loggregator/pipelines/syslog-release
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics
