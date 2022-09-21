@@ -1,20 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Location
 metadata:
-  name: azure-nozzle
-  description: Nozzle for VMware Tanzu for Microsoft Azure Log Analytics
-  annotations:
-    github.com/project-slug: vmware-tanzu/nozzle-for-microsoft-azure-log-analytics
-    backstage.io/code-coverage: scm-only
-  tags:
-    - go
-  links:
-    - url: https://ci.funtime.lol/teams/loggregator/pipelines/azure
-      title: CI Pipeline
-      icon: concourse
-      type: ci
+  name: dap-tas-journey-observability-projects
 spec:
-  type: service
-  lifecycle: production
-  owner: dap-tas-journey-observability
-  system: logging-and-metrics
+  type: url
+  targets:
+    - ./azure-nozzle.yml
+    - ./bosh-system-metrics-forwarder.yml

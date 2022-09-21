@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bosh-system-metrics-forwarder
+  description: DEPRECATED- Consumes bosh health events and forwards heartbeat events only to Loggregator
+  annotations:
+    github.com/project-slug: cloudfoundry/bosh-system-metrics-forwarder-release
+    backstage.io/code-coverage: scm-only
+  tags:
+    - go
+  links:
+    - url: https://ci.funtime.lol/teams/loggregator/pipelines/bosh-system-metrics-forwarder
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+spec:
+  type: service
+  lifecycle: production
+  owner: dap-tas-journey-observability
+  system: logging-and-metrics
