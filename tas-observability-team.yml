@@ -17,6 +17,39 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: mduane_vmware.com
+  links:
+    - url: https://docs.google.com/document/d/1wHgwbj6PWnRwCjeKmcpI9v3HWnLBG2sqCpKfgjJMyH0/edit#heading=h.3m24pbckhfc7
+      title: TAS Observability Index
+      icon: drive
+      type: docs
+    - url: https://ci.funtime.lol/
+      title: CI Pipeline
+      icon: concourse
+      type: ci
+    - url: https://www.pivotaltracker.com/n/projects/2536260
+      title: Pivotal Tracker
+      icon: tracker
+      type: tracker
+    - url: https://drive.google.com/drive/folders/0AFIWlh_SmHSsUk9PVA
+      title: Team Google Drive
+      icon: drive
+      type: docs
+    - url: https://cf-autoscaling-and-scheduling.web.app/teams/observability
+      title: Pairist
+      icon: pairist
+      type: team
+    - url: https://pivotal-io.atlassian.net/jira/software/c/projects/TOB/boards/108
+      title: Jira
+      icon: jira
+      type: tracker
+    - url: https://vmware-csp.pagerduty.com/sign_in
+      title: Pagerduty
+      icon: pagerduty
+      type: support
+    - url: https://miro.com/app/board/uXjVPaEMR7U=/?share_link_id=725634012129
+      title: Retro board
+      icon: miro
+      type: tracker
 spec:
   profile:
     displayName: Duane May
