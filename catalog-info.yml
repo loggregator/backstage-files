@@ -5,5 +5,5 @@ metadata:
 spec:
   type: url
   targets:
-    - ./azure-nozzle.yml
+    - https://github.com/loggregator/backstage-files/blob/master/azure-nozzle.yml
     - ./bosh-system-metrics-forwarder.yml
