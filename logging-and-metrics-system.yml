@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: logging-and-metrics
+  description: log and metric transport in tas-for-vms
+spec:
+  owner: dap-tas-journey-observability
