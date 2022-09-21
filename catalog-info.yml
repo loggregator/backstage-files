@@ -7,3 +7,4 @@ spec:
   targets:
     - ./azure-nozzle.yml
     - ./bosh-system-metrics-forwarder.yml
+    - ./bosh-system-metrics-server-release.yml
