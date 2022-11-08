@@ -9,10 +9,12 @@ spec:
     - ./teams/dap-tas-journey-observability.yml
     - ./systems/logging-and-metrics.yml
     - ./systems/autoscaling.yml
+    - ./systems/tas-telemetry.yml
     - ./components/azure-nozzle.yml
     - ./components/bosh-system-metrics-forwarder.yml
     - ./components/bosh-system-metrics-server-release.yml
     - ./components/cf-autoscaling-release.yml
+    - ./components/count-cores.yml
     - ./components/event-log-release.yml
     - ./components/log-cache-cli.yml
     - ./components/log-cache-release.yml

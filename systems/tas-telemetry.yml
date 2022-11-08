@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: tas-telemetry
+  description: Telemetry for tas-for-vms
+spec:
+  owner: dap-tas-journey-observability
